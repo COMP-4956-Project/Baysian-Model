@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "b8bLFje212I0LPNYtGyueorZAOZ2DwoFuqlu9aBooW8HcY1se9hBAdDTBwLFhYny3hiD+gnEnDtlsyAEHwcNJg==",
+  "success": true,
+  "projectFilePath": "/Users/yujeongan/Documents/Projects/SE/MyAI/MyAI.csproj",
+  "expectedPackageFiles": [
+    "/Users/yujeongan/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
