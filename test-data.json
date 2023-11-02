@@ -1,7 +1,7 @@
 {
 	"easy": {
 		"array": {
-			"numberOfChallenges": 2,
+			"numberOfChallenges": 5,
 			"attempted": 100,
 			"passed": 51,
 			"challenges": [
@@ -29,6 +29,39 @@
 				"Write easy loop question 1.",
 				"Write easy loop question 2.",
 				"Write easy loop question 3."
+			]
+		}
+	},
+    "medium": {
+		"array": {
+			"numberOfChallenges": 2,
+			"attempted": 100,
+			"passed": 51,
+			"challenges": [
+				"Write medium array question 1.",
+				"Write medium array question 2."
+			]
+		},
+		"class": {
+			"numberOfChallenges": 5,
+			"attempted": 39,
+			"passed": 12,
+			"challenges": [
+				"Write medium string question 1.",
+				"Write medium string question 2.",
+				"Write medium string question 3.",
+				"Write medium string question 4.",
+				"Write medium string question 5."
+			]
+		},
+		"loop": {
+			"numberOfChallenges": 3,
+			"attempted": 319,
+			"passed": 12,
+			"challenges": [
+				"Write medium loop question 1.",
+				"Write medium loop question 2.",
+				"Write medium loop question 3."
 			]
 		}
 	}

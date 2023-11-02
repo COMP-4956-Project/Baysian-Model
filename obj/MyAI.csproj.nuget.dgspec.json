@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/yujeongan/Documents/Projects/SE/MyAI/MyAI.csproj": {}
+    "/Users/yujeongan/Documents/cst/se/project/Baysian-Model/MyAI.csproj": {}
   },
   "projects": {
-    "/Users/yujeongan/Documents/Projects/SE/MyAI/MyAI.csproj": {
+    "/Users/yujeongan/Documents/cst/se/project/Baysian-Model/MyAI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yujeongan/Documents/Projects/SE/MyAI/MyAI.csproj",
+        "projectUniqueName": "/Users/yujeongan/Documents/cst/se/project/Baysian-Model/MyAI.csproj",
         "projectName": "MyAI",
-        "projectPath": "/Users/yujeongan/Documents/Projects/SE/MyAI/MyAI.csproj",
+        "projectPath": "/Users/yujeongan/Documents/cst/se/project/Baysian-Model/MyAI.csproj",
         "packagesPath": "/Users/yujeongan/.nuget/packages/",
-        "outputPath": "/Users/yujeongan/Documents/Projects/SE/MyAI/obj/",
+        "outputPath": "/Users/yujeongan/Documents/cst/se/project/Baysian-Model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/yujeongan/.nuget/NuGet/NuGet.Config"

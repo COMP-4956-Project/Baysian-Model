@@ -1,0 +1,15 @@
+Total number of challenges in easy level: 10
+
+1) To calculate the probability of "Success rate < 0.5" of array category:
+
+    P(Array | Success rate < 0.5) 
+        = P(Success rate < 0.5 | Array) * P(Array) 
+            / Normalized constant
+
+        = 0.51 * 0.2 / Normalized constant
+
+2) Repeat this for each category.
+
+3) Compare which category has the lowest probability of success rate.
+
+4) Pick a challenge from that category randomly.

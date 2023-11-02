@@ -7,16 +7,14 @@ public class Program
 {
     static void Main(string[] args)
     {
-        Run();
+        Console.WriteLine(Run());
     }
 
-    public static void Run()
+    public static string Run()
     {
         var data = ProcessData("test-data.json");
-        string userLevel = "easy"; // Replace this with the user level from DB
-        string challenge = GenerateChellenge(data[userLevel]);
-
-        Console.WriteLine(challenge);
+        string userLevel = "easy"; // TODO: Replace this with the user level from DB
+        return GenerateChellenge(data[userLevel]);
     }
 
     static dynamic ProcessData(string fileName)
@@ -29,13 +27,20 @@ public class Program
     static string GenerateChellenge(dynamic data)
     {
         List<double> posteriors = new List<double>();
+        double totalNumberOfChallenges = 0;
+
+        foreach (var category in data)
+        {
+            double numberOfChallenges = category.Value["numberOfChallenges"];
+            totalNumberOfChallenges += numberOfChallenges;
+        }
 
         foreach (var category in data)
         {
             double numberOfChallenges = category.Value["numberOfChallenges"];
             double successRate = CalculateSuccessRate(category);
 
-            double posterior = successRate * numberOfChallenges;
+            double posterior = successRate * (numberOfChallenges / totalNumberOfChallenges);
             posteriors.Add(posterior);
         }
         double normalizedConstant = CalculateNormalizedConstant(posteriors);
@@ -61,7 +66,6 @@ public class Program
         {
             throw new ArgumentException("The dictionary is empty or null.");
         }
-
         var minPair = results.Aggregate((x, y) => x.Value < y.Value ? x : y);
         return minPair.Key;
     }
@@ -89,11 +93,10 @@ public class Program
     }
 
     static string PickChallenge(dynamic data, string category)
-    {   
+    {
         var challenges = data[category]["challenges"];
         Random random = new Random();
         int randomIndex = random.Next(0, challenges.Count);
-
         return challenges[randomIndex];
     }
 }
