@@ -17,7 +17,7 @@ public class Program
         return GenerateChellenge(data[userLevel]);
     }
 
-    static dynamic ProcessData(string fileName)
+    public static dynamic ProcessData(string fileName)
     {
         string json = File.ReadAllText(fileName);
         dynamic data = JsonConvert.DeserializeObject(json)!;
@@ -60,7 +60,7 @@ public class Program
 
         return challenge;
     }
-    static string CompareProbability(Dictionary<string, double> results)
+    public static string CompareProbability(Dictionary<string, double> results)
     {
         if (results == null || results.Count == 0)
         {
@@ -70,7 +70,7 @@ public class Program
         return minPair.Key;
     }
 
-    static double CalculateNormalizedConstant(List<double> posterior)
+    public static double CalculateNormalizedConstant(List<double> posterior)
     {
         double result = 0;
         foreach (var value in posterior)
@@ -80,12 +80,12 @@ public class Program
         return result;
     }
 
-    static double CalculateBayesianTheorom(double successRate, double numberOfChallenges, double normalizedConstant)
+    public static double CalculateBayesianTheorom(double successRate, double numberOfChallenges, double normalizedConstant)
     {
         return successRate * numberOfChallenges / normalizedConstant;
     }
 
-    static double CalculateSuccessRate(dynamic category)
+    public static double CalculateSuccessRate(dynamic category)
     {
         double attempted = category.Value["attempted"];
         double passed = category.Value["passed"];
