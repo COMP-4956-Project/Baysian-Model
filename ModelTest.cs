@@ -5,7 +5,7 @@ public class ModelTest
 {
 
     [Fact]
-    public void CompareProbabilityTest()
+    public void CompareProbabilitySuccessTest()
     {
         // Arrange
         Dictionary<string, double> data = new Dictionary<string, double>
@@ -21,6 +21,28 @@ public class ModelTest
 
         // Assert
         Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void CompareProbability_ThrowsArgumentExceptionForEmptyOrNullDictionary()
+    {
+        // Arrange
+        Dictionary<string, double> emptyDictionary = null;
+
+        // Act & Assert
+        Assert.Throws<ArgumentException>(() =>
+            Program.CompareProbability(emptyDictionary));
+    }
+
+    [Fact]
+    public void CompareProbability_ThrowsArgumentExceptionForEmptyDictionary()
+    {
+        // Arrange
+        Dictionary<string, double> emptyDictionary = new Dictionary<string, double>();
+
+        // Act & Assert
+        Assert.Throws<ArgumentException>(() =>
+            Program.CompareProbability(emptyDictionary));
     }
 
     [Fact]
