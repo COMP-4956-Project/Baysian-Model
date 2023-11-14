@@ -39,4 +39,4 @@ jobs:
           app-name: 'CodeCraftAPI'
           slot-name: 'Production'
           package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_111641C9A1014015928950F2C2537B3A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_560D0C48B72A448C905F6953D6485EED }}
