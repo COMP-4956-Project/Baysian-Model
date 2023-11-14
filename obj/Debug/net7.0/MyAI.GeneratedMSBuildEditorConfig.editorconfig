@@ -1,4 +1,9 @@
 is_global = true
+build_property.FunctionsEnableMetadataSourceGen = 
+build_property.FunctionsEnableExecutorSourceGen = false
+build_property.FunctionsAutoRegisterGeneratedFunctionsExecutor = true
+build_property.FunctionsAutoRegisterGeneratedMetadataProvider = false
+build_property.FunctionsGeneratedCodeNamespace = 
 build_property.TargetFramework = net7.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -8,4 +13,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyAI
-build_property.ProjectDir = /Users/yujeongan/Documents/cst/se/project/Baysian-Model/
+build_property.ProjectDir = /Users/Home/CodeCraft/Baysian_Model/Baysian_Model/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

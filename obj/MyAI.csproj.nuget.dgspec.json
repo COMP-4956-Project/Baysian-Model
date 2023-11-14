@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/yujeongan/Documents/cst/se/project/Baysian-Model/MyAI.csproj": {}
+    "/Users/Home/CodeCraft/Baysian_Model/Baysian_Model/MyAI.csproj": {}
   },
   "projects": {
-    "/Users/yujeongan/Documents/cst/se/project/Baysian-Model/MyAI.csproj": {
+    "/Users/Home/CodeCraft/Baysian_Model/Baysian_Model/MyAI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yujeongan/Documents/cst/se/project/Baysian-Model/MyAI.csproj",
+        "projectUniqueName": "/Users/Home/CodeCraft/Baysian_Model/Baysian_Model/MyAI.csproj",
         "projectName": "MyAI",
-        "projectPath": "/Users/yujeongan/Documents/cst/se/project/Baysian-Model/MyAI.csproj",
-        "packagesPath": "/Users/yujeongan/.nuget/packages/",
-        "outputPath": "/Users/yujeongan/Documents/cst/se/project/Baysian-Model/obj/",
+        "projectPath": "/Users/Home/CodeCraft/Baysian_Model/Baysian_Model/MyAI.csproj",
+        "packagesPath": "/Users/Home/.nuget/packages/",
+        "outputPath": "/Users/Home/CodeCraft/Baysian_Model/Baysian_Model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/yujeongan/.nuget/NuGet/NuGet.Config"
+          "/Users/Home/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -38,6 +38,22 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.Azure.Functions.Worker": {
+              "target": "Package",
+              "version": "[1.19.0, )"
+            },
+            "Microsoft.Azure.Functions.Worker.Extensions.Http": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.Azure.Functions.Worker.Sdk": {
+              "target": "Package",
+              "version": "[1.15.1, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.22.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -54,12 +70,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
